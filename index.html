@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elvis 許懷良 | 個人自傳網站</title>
+    <style>
+        /* Desain Kreatif & Berwarna */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, "Microsoft JhengHei";
+        }
+
+        body {
+            background: linear-gradient(135deg, #6ee7b7, #3b82f6, #9333ea);
+            background-size: 400% 400%;
+            animation: gradientBG 15s ease infinite;
+            color: #2d3748;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .container {
+            max-width: 850px;
+            margin: 0 auto;
+        }
+
+        /* Header Card */
+        header {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(10px);
+            padding: 40px;
+            border-radius: 24px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+            margin-bottom: 30px;
+            border: 1px solid rgba(255, 255, 255, 0.5);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            color: #1a202c;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            color: #4a5568;
+            font-weight: 500;
+        }
+
+        /* Section Cards */
+        section {
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(10px);
+            padding: 35px;
+            border-radius: 24px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+            transition: transform 0.3s ease;
+        }
+
+        section:hover {
+            transform: translateY(-5px);
+        }
+
+        h2 {
+            font-size: 1.6rem;
+            color: #3182ce;
+            margin-bottom: 20px;
+            border-bottom: 3px solid #63b3ed;
+            padding-bottom: 8px;
+            display: inline-block;
+        }
+
+        p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #4a5568;
+        }
+
+        /* List Styling */
+        ul {
+            list-style: none;
+        }
+
+        .exp-item, .hobby-item {
+            margin-bottom: 20px;
+            padding-left: 15px;
+            border-left: 4px solid #9f7aea;
+        }
+
+        .exp-title {
+            font-weight: bold;
+            font-size: 1.2rem;
+            color: #2d3748;
+        }
+
+        .exp-company {
+            color: #6b7280;
+            font-style: italic;
+            margin-bottom: 5px;
+        }
+
+        /* Tags for Skills */
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 15px;
+        }
+
+        .skill-tag {
+            background: linear-gradient(135deg, #f6e05e, #ed8936);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-weight: bold;
+            font-size: 0.95rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        .lang-tag {
+            background: linear-gradient(135deg, #fc8181, #e53e3e);
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            color: white;
+            margin-top: 40px;
+            font-size: 0.9rem;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- 頂部標題 -->
+        <header>
+            <h1>你好，我是 Elvis (許懷良)</h1>
+            <p>歡迎來到我的個人自傳網站 👋 ✨</p>
+            <p style="font-size: 1rem; margin-top: 5px; color: #718096;">大家通常叫我 <strong>Vis</strong> 或 <strong>懷良</strong></p>
+        </header>
+
+        <!-- 關於我 -->
+        <section id="about">
+            <h2>關於我 / About Me</h2>
+            <p>
+                我目前就讀於<strong>嶺東科技大學 (LTU) 資訊科技系 (IT)</strong>。在大專的學術生涯中，我全心投入於資訊科技相關領域的學習。除了課堂上的理論知識，我也正積極且熱情地自學<strong>程式設計 (Programming)</strong>，期望未來能將科技研發落實於生活應用中。
+            </p>
+        </section>
+
+        <!-- 工作經驗 -->
+        <section id="experience">
+            <h2>工作經驗 / Work Experience</h2>
+            <ul>
+                <li class="exp-item">
+                    <div class="exp-title">助理工程師 (Assistant Engineer)</div>
+                    <div class="exp-company">儀興科技 (MIC) </div>
+                    <p>主要負責 AI 數據標註工作。針對影像與影片中的特定物件進行精準標籤與分類，提供高質量的核心數據以供人工智慧（AI）模型進行辨識與評估訓練。</p>
+                </li>
+                <li class="exp-item">
+                    <div class="exp-title">包裝團隊成員 (Packaging Team)</div>
+                    <div class="exp-company">玉美生技</div>
+                    <p>負責蔬菜與農產品的包裝作業，維持生產線的高效運作，並嚴格執行基本的品質管制與衛生安全檢查。</p>
+                </li>
+            </ul>
+        </section>
+
+        <!-- 專業技能與語言 -->
+        <section id="skills">
+            <h2>專業技能與語言 / Skills & Languages</h2>
+            <p>我具備跨文化的語言優勢與持續成長的資訊科技基礎：</p>
+            <div class="skills-container">
+                <span class="skill-tag lang-tag">印尼語 (精通/母語級別)</span>
+                <span class="skill-tag lang-tag">華語 (Mandarin B1 程度)</span>
+                <span class="skill-tag lang-tag">英語 (基礎學習中)</span>
+                <span class="skill-tag">程式設計 (基礎與持續進修)</span>
+                <span class="skill-tag">AI 數據標註與影像處理</span>
+                <span class="skill-tag">資訊科技系統基礎</span>
+            </div>
+        </section>
+
+        <!-- 興趣愛好 -->
+        <section id="hobbies">
+            <h2>興趣愛好 / Hobbies</h2>
+            <p>在專注於IT課業之餘，我也透過以下興趣來激發思維與放鬆身心：</p>
+            <div style="margin-top: 15px;">
+                <div class="hobby-item">
+                    <strong>開放世界遊戲 (Open-World Games)：</strong> 喜歡探索廣闊且充滿未知挑戰的虛擬世界，培養解決問題的邏輯。
+                </div>
+                <div class="hobby-item">
+                    <strong>動漫 (Anime)：</strong> 熱愛充滿創意與深刻情感演繹的動畫作品。
+                </div>
+                <div class="hobby-item">
+                    <strong>陸劇 (Chinese Dramas)：</strong> 閒暇時喜歡追劇，體驗不同的故事張力與文化敘事。
+                </div>
+            </div>
+        </section>
+
+        <!-- 頁尾 -->
+        <footer>
+            <p>&copy; 2026 Elvis 許懷良. All Rights Reserved. | 嶺東科技大學期末項目</p>
+        </footer>
+    </div>
+
+</body>
+</html>
